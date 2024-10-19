@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Size 2040x2040</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background Gradient */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #d4af37, #8c7d40); /* Dark Gold to Gold */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Centered container */
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(145deg, #f5e6be, #c3a76e); /* Light Gold to Dark Gold */
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Welcome Section */
+        #welcomeSection {
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff; /* Make the word RIEGHWRAPWORKS white */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to enhance visibility */
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #f5e6be;
+        }
+
+        /* Input styling */
+        input[type="text"] {
+            padding: 15px;
+            width: 50%;
+            border: 2px solid #d4af37;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            outline: none;
+            font-size: 1rem;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 10px #f5e6be;
+        }
+
+        /* Button styling */
+        button {
+            padding: 15px 30px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #c3a76e;
+            transform: translateY(-3px);
+        }
+
+        /* Images Section (Initially Hidden) */
+        #imagesSection {
+            display: none;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background: #333;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        #imagesSection h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #f5e6be;
+        }
+
+        /* Image styling */
+        img {
+            width: 400px; /* Smaller width for improved layout */
+            height: 400px;
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            input[type="text"] {
+                width: 80%;
+            }
+        }
+    </style>
+    <script>
+        function showImages() {
+            // Get the name entered by the user
+            var name = document.getElementById("nameInput").value;
+            if (name.trim() !== "") {
+                // Hide the welcome section and show the images section
+                document.getElementById("welcomeSection").style.display = "none";
+                document.getElementById("imagesSection").style.display = "block";
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <div id="welcomeSection">
+            <h1>WELCOME TO RIEGHWRAPWORKS</h1>
+            <p>Please enter your name below:</p>
+            <input type="text" id="nameInput" placeholder="Enter your name here">
+            <br>
+            <button onclick="showImages()">Continue</button>
+        </div>
+
+        <!-- Images Section (Initially Hidden) -->
+        <div id="imagesSection">
+            <h1>MY WORKS!</h1>
+            <marquee>
+            <h2>To download just hold the image</h2></marquee> 
+            <img src="TTTTRAVEGOOOSUPERLINIS.PNG" alt="Image">
+            <img src="fairy.PNG" alt="Image">
+            <img src="Volvo 98005.PNG" alt="Image">
+            <img src="Volvo 9800sil.PNG" alt="Image">
+            <img src=".PNG" alt="Image">
+            <img src="MIGA.PNG" alt="Image">
+            <img src="daet.PNG" alt="Image">
+            <img src="TTTTRAVEGOOOdaet.PNG" alt="Image">
+            <img src="TTTTRAVEGOOOphe.PNG" alt="Image">
+            <img src="vvli.PNG" alt="Image">
+            <img src=".PNG" alt="Image">
+            <img src="DANGWA.PNG" alt="Image">
+            <img src="PARTASSS7.PNG" alt="Image">
+            <img src="setrarab.PNG" alt="Image">
+            <img src="travego16ph.PNG" alt="Image">
+            <img src="partasfly.PNG" alt="Image">
+            <img src="PARTAS ROAR.PNG" alt="Image"> 
+            <img src="cagswa.PNG" alt="Image">
+            <img src="asiastar.PNG" alt="Image">
+            <img src="19241.PNG" alt="Image">
+            <img src="1928.PNG" alt="Image">
+            <img src="TTTTRAVEGOOO123.PNG" alt="Image">
+            <img src="travego16ULTRABUS.PNG" alt="Image">
+            <img src="TRIBAL.PNG" alt="Image">
+        </div>
+    </div>
+
+</body>
+</html>
